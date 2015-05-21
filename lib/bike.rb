@@ -1,9 +1,17 @@
-# require 'pry'
+require 'pry'
 
 class Bike
 
+  def initialize
+    @broken = false
+  end
+
   def broken?
-    false
+    @broken
+  end
+
+  def break
+    @broken = true
   end
 
 end
